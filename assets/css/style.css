@@ -1,0 +1,47 @@
+html, body {
+   height: 100%;
+   background-image: url(../images/back1.jpg); 
+   background-repeat: no-repeat;
+   background-size: 100%;
+   background-position-y: 180px;
+
+}
+
+.jumbotron {
+    background-color: #B9A79E;
+    height: 275px;
+    margin: 0;
+    padding: 20px 20px;
+    color: #F1E0E1;
+}
+
+#foot {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  opacity: 100%;
+  color: white;
+  text-align: center;
+}
+
+.imgs {
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+}
+
+#lakeThings {
+  position: absolute;
+  bottom: 10px;
+}
+
+#numberGiven {
+  height: 200px;
+  width: 300px;
+  border-radius: 25px;
+  padding: 10px;
+  border: #F1E0E1 solid 5px;
+  text-align: center;
+  margin: 30px;
+}
