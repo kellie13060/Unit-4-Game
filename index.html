@@ -10,6 +10,15 @@
 
   <link rel="stylesheet" href="assets/css/style.css">
 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="assets/javascript/game.js"></script>
+
+  <script src="https://code.jquery.com/jquery.js"></script>
 </head>
 
 <body>
@@ -26,12 +35,19 @@
   <div class="container2">
     <div class="row">
       <div class="col"></div>
-      <div class="col borderBox">
+      <div class="col borderBox"> 
         <h3>Number to Win</h3>
         <hr>
+        <div id="numberToWin"></div>
       </div>
-      <div class="col borderBox" >Wins<hr></div>
-      <div class="col borderBox">Loses<hr></div>
+      <div class="col borderBox" >Wins<hr>
+        <div id="numberOfWins"></div>
+      </div>
+      
+      <div class="col borderBox">Loses<hr>
+        <div id="numberOfLost"></div>
+      </div>
+      
       <div class="col"></div>
     </div>
     <div class="row" id="lakeThings">
@@ -44,10 +60,8 @@
     </div>
   </div>
   
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
-  <script src="assets/javascript/game.js"></script>
+  
+ 
   <footer id="foot">
 
   </footer>
