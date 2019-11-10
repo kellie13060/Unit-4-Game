@@ -4,7 +4,6 @@ html, body {
    background-repeat: no-repeat;
    background-size: 100%;
    background-position: bottom;
-
 }
 
 .jumbotron {
@@ -12,19 +11,9 @@ html, body {
     height: 275px;
     margin: 0;
     padding: 20px 20px;
-    color: #F1E0E1;
+    color: #5e5652;
     border-bottom: 5px solid #7d6d65 
 }
-
-/* #foot {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  opacity: 100%;
-  color: white;
-  text-align: center; */
-/* } */
 
 .center-block {
   display: block;
@@ -33,9 +22,33 @@ html, body {
 }
 
 .imgs {
+  height: 265px;
+  width: 265px;
+  margin: 10px;
+}
+
+#imgShell:hover {
   height: 275px;
   width: 275px;
-  margin: 10px;
+  margin: 5px;
+}
+
+#imgWood:hover {
+  height: 275px;
+  width: 275px;
+  margin: 5px;
+}
+
+#imgCoin:hover {
+  height: 275px;
+  width: 275px;
+  margin: 5px;
+}
+
+#imgPink:hover {
+  height: 275px;
+  width: 275px;
+  margin: 5px;
 }
 
 #lakeThings {
@@ -51,15 +64,27 @@ html, body {
   text-align: center;
   margin: 5px;
   font-size: 25px;
-  background-color: #B9A79E;
-  opacity: 88%;
+  opacity: 60%;
   color: #5e5652;
 }
 
-.container2 {
-  margin: 0px 0px 0px 0px;
+#yellow {
+  background-color: yellow;
+}
+#blue {
+  background-color: lightblue;
+}
+#green {
+  background-color: lightgreen;
+}
+#red {
+  background-color: pink;
 }
 
-.row{
+.container2 {
+  margin: 0px 5px;
+}
+
+#lakeThings{
   width: 100%;
 }

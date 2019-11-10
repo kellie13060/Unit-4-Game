@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Lake Things Collector</title>
+  <title>Lake Item Collector</title>
 
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -24,7 +24,7 @@
 <body>
 
   <div class="jumbotron">
-    <h1 class="display-4 text-center">Lake Things Collector</h1>
+    <h1 class="display-4 text-center">Lake Item Collector</h1>
     <p class="lead text-center">You win if you match the random number given to you!</p>
     <hr class="my-4 text-center">
     <p class="text-center">There are four items below, by clicking on the items you will add a specific amount of points to your total
@@ -34,21 +34,24 @@
 
   <div class="container2">
     <div class="row">
-      <div class="col"></div>
-      <div class="col borderBox"> 
-        <h3>Number to Win</h3>
+      
+      <div class="col borderBox" id="yellow">Number to Win
         <hr>
         <div id="numberToWin"></div>
       </div>
-      <div class="col borderBox" >Wins<hr>
+      <div class="col borderBox" id="blue">Current Number
+        <hr>
+        <div id="curCounter"></div>
+      </div>
+      <div class="col borderBox" id="green">Wins
+        <hr>
         <div id="numberOfWins"></div>
       </div>
       
-      <div class="col borderBox">Loses<hr>
+      <div class="col borderBox" id="red">Loses
+        <hr>
         <div id="numberOfLost"></div>
       </div>
-      
-      <div class="col"></div>
     </div>
     <div class="row" id="lakeThings">
       <div class="span center-block">

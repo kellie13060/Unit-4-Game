@@ -1,15 +1,3 @@
-//establish the random number given to get
-//number options given and randomly chose
-
-
-//set the numberGiven to match the target number
-
-//check to see if the numbers match or have gone over
-
-//if the numbers match log the win
-//else if the number has gone over log a lose
-//else the number is too low do nothing
-
 var counter = 0;
 var randomNumber = Math.floor(Math.random() * (120 - 19) + 19);
 console.log(randomNumber);
@@ -28,6 +16,7 @@ $(document).ready(function () {
     $("#numberToWin").text(randomNumber);
     $("#numberOfWins").text(wins);
     $("#numberOfLost").text(lost);
+    $("#curCounter").text(counter);
     console.log("Counter: " + counter);
 
     function reset (){
@@ -38,12 +27,14 @@ $(document).ready(function () {
         numPink = Math.floor(Math.random() * (12 - 1) + 1);
         randomNumber = Math.floor(Math.random() * (120 - 19) + 19);
         $("#numberToWin").text(randomNumber);
+        $("#curCounter").text(counter)
         console.log(randomNumber);
     };
 
     $("#imgShell").on("click", function () {
         counter += numShell;
         console.log("Shell: " + counter);
+        $("#curCounter").text(counter);
         if (counter === randomNumber) {
             alert("You win somehow, even though this game is impossible!");
             wins += 1;
@@ -61,6 +52,7 @@ $(document).ready(function () {
     $("#imgWood").on("click", function () {
         counter += numWood;
         console.log("Wood: " + counter);
+        $("#curCounter").text(counter);
         if (counter === randomNumber) {
             alert("You win somehow, even though this game is impossible!");
             wins += 1;
@@ -78,6 +70,7 @@ $(document).ready(function () {
     $("#imgCoin").on("click", function () {
         counter += numCoin;
         console.log("Coin: " + counter);
+        $("#curCounter").text(counter);
         if (counter === randomNumber) {
             alert("You win somehow, even though this game is impossible!");
             wins += 1;
@@ -95,6 +88,7 @@ $(document).ready(function () {
     $("#imgPink").on("click", function () {
         counter += numPink;
         console.log("Pink: " + counter);
+        $("#curCounter").text(counter);
         if (counter === randomNumber) {
             alert("You win somehow, even though this game is impossible!");
             wins += 1;
